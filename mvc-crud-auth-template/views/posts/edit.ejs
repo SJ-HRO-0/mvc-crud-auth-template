@@ -1,0 +1,7 @@
+
+<h2>Editar Post</h2>
+<form method="post" action="/posts/<%= post.id %>">
+  <label>Título <input name="title" value="<%= post.title %>" required></label>
+  <label>Contenido <textarea name="body" required><%= post.body %></textarea></label>
+  <button>Actualizar</button>
+</form>

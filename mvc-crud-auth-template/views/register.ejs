@@ -1,0 +1,8 @@
+
+<h2>Registro</h2>
+<% if (message) { %><p><b><%= message %></b></p><% } %>
+<form method="post" action="/register">
+  <label>Usuario <input name="username" required></label>
+  <label>Contraseña <input type="password" name="password" required></label>
+  <button>Crear cuenta</button>
+</form>

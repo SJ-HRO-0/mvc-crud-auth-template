@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= typeof title !== 'undefined' ? title : 'MVC CRUD Auth' %></title>
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Inicio</a>
+      <% if (typeof user !== 'undefined' && user) { %>
+        <a href="/posts">Posts</a>
+        <form action="/logout" method="post" style="display:inline;">
+          <button>Salir (<%= user.username %>)</button>
+        </form>
+      <% } else { %>
+        <a href="/login">Login</a>
+        <a href="/register">Registro</a>
+      <% } %>
+    </nav>
+  </header>
+  <main>
+    <%- body %>
+  </main>
+</body>
+</html>

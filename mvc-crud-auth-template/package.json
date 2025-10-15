@@ -1,0 +1,25 @@
+{
+  "name": "mvc-crud-auth-template",
+  "version": "1.0.0",
+  "description": "Estructura base para un proyecto MVC con CRUD + Auth. Archivos vacíos para que pegues tu propio código.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.2",
+    "method-override": "^3.0.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  }
+}
